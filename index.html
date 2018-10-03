@@ -25,33 +25,23 @@
 </head>
 <body>
 
-  <!-- brak java scriptu -->
-  <noscript>
-    Do pełnej funkcjonalności strony potrzebujesz włączonej obsługi skryptów.
-    Tu znajdziesz <a href="https://www.enable-javascript.com/pl/" target="_blank">
-    instrukcje, które pozwolą Ci włączyć skrypty w Twojej przeglądarce</a>.
-  </noscript>
-
-  <!-- nieaktualna przeglądarka, zob. dostosowanie: https://browser-update.org/customize.html -->
-  <script>
-    var $buoop = {notify:{e:-6,f:-4,o:-4,s:-2,c:-4},insecure:true,api:5};
-    function $buo_f(){
-      var e = document.createElement("script");
-      e.src = "http://browser-update.org/update.min.js";
-      document.body.appendChild(e);
-    };
-    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
-    catch(e){window.attachEvent("onload", $buo_f)}
-  </script>
 
   <!-- Nagłówek strony: menu, logo, breadcrumbs itp. -->
-  <div class="container">
-    <i class="fas fa-check-circle"></i>
-    Klasa .container użyta została przykładowo, jeżeli Twój projekt wymaga .container-fluid
-    lub w ogóle rezygnuje z kontenerów, zmień ją.<br>
-    <i class="fas fa-check-circle"></i>
-    Nie muszisz trzymać się sztywnego podziału na trzy sekcje szablonu (nagłowek, treść, stopka).
-  </div>
+  <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color:rgb(122,122,122);">
+            <div class="container"><a class="navbar-brand" href="#" style="color:rgb(255,255,255);">Biblioteka</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <button class="btn btn-primary" type="button" style="margin:4px;">Witamy<div class="btn-group" role="group"></div></button>
+                    <button class="btn btn-primary" type="button" style="margin:4px;">Aktualności</button>
+                    <button class="btn btn-primary"type="button" style="margin:4px;">biblioteka</button>
+                    <button class="btn btn-primary" type="button" style="margin:4px;">Zbiory</button>
+                    <button class="btn btn-primary" type="button" style="margin:4px;">Maturzyści</button>
+                    <button class="btn btn-primary"type="button" style="margin:4px;">Ciekawostki</button>
+                    <button class="btn btn-primary" type="button" style="margin:4px;">2018 rokiem....</button></div>
+    </div>
+    </nav>
+    </div>
 
   <!-- Treść główna -->
   <div class="container">
